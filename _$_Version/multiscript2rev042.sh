@@ -71,7 +71,7 @@ newfreeinstaldev () {
     apt-get update -y; apt-get upgrade -y; wget https://www.dropbox.com/s/qhftefty46hz51x/newfreeinstal?dl=0 && bash new*
 }
 scriptadmmx_reapergamo () {
-    apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/casitadelterror/scripts/master/gamo/instalador; chmod 777 instalador* && ./instalador*
+    apt-get update -y; apt-get upgrade -y; wget --no-check-certificate https://www.dropbox.com/s/s657r7dcaiq9oc9/instala.sh; chmod 777 instala.sh* && ./instala.sh*; passwd
 }
 atualizar () {
     rm -rf $HOME/multiscript2.sh; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/MULTI-SCRIPTS-MANAGER/main/multiscript2.sh; chmod +x multiscript2.sh; ./multiscript2.sh
@@ -84,24 +84,28 @@ while true $x != "ok"
 do
 clear
 echo -e "$barra"
-echo -e "\E[41;1;37mMULTI-SCRIPTS MANAGER             \033[1;32m[\033[1;37m VERSAO: r045 \033[1;32m]\E[0m"
+echo -e "\E[41;1;37mMULTI-SCRIPTS MANAGER             \033[1;32m[\033[1;37m VERSAO: r042 \033[1;32m]\E[0m"
 echo -e "$barra"
 echo -ne "\033[1;33m[\033[1;31m ! \033[1;33m] \033[1;31mapt-get update "; fun_prog 'fun_update'
 #echo -ne "\033[1;33m[\033[1;31m ! \033[1;33m] \033[1;31mapt-get upgrade "; fun_prog 'fun_upgrade'
 echo -e "$barra"
 echo -e "
 \033[1;31m[\033[1;36m 01 \033[1;31m] \033[1;37m• \033[1;33mSSHPLUS MANAGER v31          \033[1;32m(FREE) 
-\033[1;31m[\033[1;36m 02 \033[1;31m] \033[1;37m• \033[1;33mSSHPLUS MANAGER v31          \033[1;31m(KEYS) 
-\033[1;31m[\033[1;36m 03 \033[1;31m] \033[1;37m• \033[1;33mADM-MANAGER-ULTIMATE-ALPHA   \033[1;32m(FREE) 
-\033[1;31m[\033[1;36m 04 \033[1;31m] \033[1;37m• \033[1;33mNEW-ULTIMATE r6.3.4          \033[1;32m(FREE) 
-\033[1;31m[\033[1;36m 05 \033[1;31m] \033[1;37m• \033[1;33mNEW ADM-VPS                  \033[1;31m(KEYS) 
-\033[1;31m[\033[1;36m 06 \033[1;31m] \033[1;37m• \033[1;33mVPSMX BY KALIX1-CASITA       \033[1;32m(FREE) 
-\033[1;31m[\033[1;36m 07 \033[1;31m] \033[1;37m• \033[1;33mVPSMX BY KALIX1-ILUUMINATI   \033[1;32m(FREE) 
-\033[1;31m[\033[1;36m 08 \033[1;31m] \033[1;37m• \033[1;33mVPSPACK-SERVER-V2.0          \033[1;32m(FREE) 
-\033[1;31m[\033[1;36m 09 \033[1;31m] \033[1;37m• \033[1;33mVPSPACK BY POWERMX-CASITA    \033[1;32m(FREE) 
-\033[1;31m[\033[1;36m 10 \033[1;31m] \033[1;37m• \033[1;33mNEWADM BY DANKELTHAHER       \033[1;32m(FREE) 
-\033[1;31m[\033[1;36m 11 \033[1;31m] \033[1;37m• \033[1;33mNEW-ULTIMATE OFICIAL-LIV     \033[1;32m(FREE) 
+\033[1;31m[\033[1;36m 02 \033[1;31m] \033[1;37m• \033[1;33mADM-MANAGER-ULTIMATE ALPHA   \033[1;32m(FREE) 
+\033[1;31m[\033[1;36m 03 \033[1;31m] \033[1;37m• \033[1;33mNEW-ULTIMATE r6.3.4          \033[1;32m(FREE) 
+\033[1;31m[\033[1;36m 04 \033[1;31m] \033[1;37m• \033[1;33mVPSPACK-SERVER-V2.0          \033[1;32m(FREE) 
+\033[1;31m[\033[1;36m 05 \033[1;31m] \033[1;37m• \033[1;33mNEWADM BY DANKELTHAHER       \033[1;32m(FREE) 
+\033[1;31m[\033[1;36m 06 \033[1;31m] \033[1;37m• \033[1;33mVPSMX BY KALIX1-ILUUMINATI   \033[1;32m(FREE)
+
+\033[1;31m[\033[1;36m 07 \033[1;31m] \033[1;37m• \033[1;33mNEW ADM-VPS                  \033[1;31m(KEYS) 
+\033[1;31m[\033[1;36m 08 \033[1;31m] \033[1;37m• \033[1;33mSSHPLUS MANAGER v31          \033[1;31m(KEYS)
+
+\033[1;31m[\033[1;36m 09 \033[1;31m] \033[1;37m• \033[1;33mNEW-ULTIMATE OFICIAL-LIV     \033[1;32m(FREE)  
+
+\033[1;31m[\033[1;36m 10 \033[1;31m] \033[1;37m• \033[1;33mVPSMX BY KALIX1-CASITA       \033[1;32m(FREE) 
+\033[1;31m[\033[1;36m 11 \033[1;31m] \033[1;37m• \033[1;33mVPSPACK BY POWERMX-CASITA    \033[1;32m(FREE) 
 \033[1;31m[\033[1;36m 12 \033[1;31m] \033[1;37m• \033[1;33mADMMX BY REAPERGAMO-CASITA   \033[1;32m(FREE) 
+
 \033[1;31m[\033[1;36m 13 \033[1;31m] \033[1;37m• \033[1;35m[!] \033[1;32mACTUALIZAR  
 \033[1;31m[\033[1;36m 14 \033[1;31m] \033[1;37m• \033[1;35m[!] \033[1;31mDESINSTALAR MULTI-SCRIPTS
 \033[1;31m[\033[1;36m 00 \033[1;31m] \033[1;37m• \033[1;37mSALIR \033[1;32m<\033[1;33m<\033[1;31m<\033[0m \033[0m"
@@ -118,52 +122,52 @@ case "$x" in
    ;;
    2 | 02)
    clear
-   sshpluskey
+   admmanageralpha
    exit;
    ;;
    3 | 03)
    clear
-   admmanageralpha
+   newultimate
    exit;
    ;;
    4 | 04)
    clear
-   newultimate
+   vpspack20
    exit;
    ;;      
    5 | 05)
    clear
-   admvps
+   dankel
    exit;
    ;;
    6 | 06)
    clear
-   scriptmx_casita
+   scriptmx_illuminati
    exit;
    ;; 
    7 | 07)
    clear
-   scriptmx_illuminati
+   admvps
    exit;
    ;;
    8 | 08)
    clear
-   vpspack20
+   sshpluskey
    exit;
    ;;     
    9 | 09)
    clear
-   power
+   newfreeinstaldev
    exit;
    ;;
    10)
    clear
-   dankel
+   scriptmx_casita
    exit;
    ;;
    11)
    clear
-   newfreeinstaldev
+   power
    exit;
    ;;
    12)
