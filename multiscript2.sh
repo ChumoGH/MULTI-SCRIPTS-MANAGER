@@ -91,20 +91,20 @@ echo -ne "\033[1;33m[\033[1;31m ! \033[1;33m] \033[1;31mapt-get update "; fun_pr
 echo -e "$barra"
 echo -e "
 \033[1;31m[\033[1;36m 01 \033[1;31m] \033[1;37m• \033[1;33mSSHPLUS MANAGER v31          \033[1;32m(FREE) 
-\033[1;31m[\033[1;36m 03 \033[1;31m] \033[1;37m• \033[1;33mADM-MANAGER-ULTIMATE-ALPHA   \033[1;32m(FREE) 
-\033[1;31m[\033[1;36m 04 \033[1;31m] \033[1;37m• \033[1;33mNEW-ULTIMATE r6.3.4          \033[1;32m(FREE) 
-\033[1;31m[\033[1;36m 08 \033[1;31m] \033[1;37m• \033[1;33mVPSPACK-SERVER-V2.0          \033[1;32m(FREE) 
-\033[1;31m[\033[1;36m 10 \033[1;31m] \033[1;37m• \033[1;33mNEWADM BY DANKELTHAHER       \033[1;32m(FREE) 
-\033[1;31m[\033[1;36m 07 \033[1;31m] \033[1;37m• \033[1;33mVPSMX BY KALIX1-ILUUMINATI   \033[1;32m(FREE)
+\033[1;31m[\033[1;36m 02 \033[1;31m] \033[1;37m• \033[1;33mADM-MANAGER-ULTIMATE-ALPHA   \033[1;32m(FREE) 
+\033[1;31m[\033[1;36m 03 \033[1;31m] \033[1;37m• \033[1;33mNEW-ULTIMATE r6.3.4          \033[1;32m(FREE) 
+\033[1;31m[\033[1;36m 04 \033[1;31m] \033[1;37m• \033[1;33mVPSPACK-SERVER-V2.0          \033[1;32m(FREE) 
+\033[1;31m[\033[1;36m 05 \033[1;31m] \033[1;37m• \033[1;33mNEWADM BY DANKELTHAHER       \033[1;32m(FREE) 
+\033[1;31m[\033[1;36m 06 \033[1;31m] \033[1;37m• \033[1;33mVPSMX BY KALIX1-ILUUMINATI   \033[1;32m(FREE)
 
-\033[1;31m[\033[1;36m 05 \033[1;31m] \033[1;37m• \033[1;33mNEW ADM-VPS                  \033[1;31m(KEYS) 
-\033[1;31m[\033[1;36m 02 \033[1;31m] \033[1;37m• \033[1;33mSSHPLUS MANAGER v31          \033[1;31m(KEYS) 
+\033[1;31m[\033[1;36m 07 \033[1;31m] \033[1;37m• \033[1;33mNEW ADM-VPS                  \033[1;31m(KEYS) 
+\033[1;31m[\033[1;36m 08 \033[1;31m] \033[1;37m• \033[1;33mSSHPLUS MANAGER v31          \033[1;31m(KEYS)
 
-\033[1;31m[\033[1;36m 06 \033[1;31m] \033[1;37m• \033[1;33mVPSMX BY KALIX1-CASITA       \033[1;32m(FREE) 
-\033[1;31m[\033[1;36m 09 \033[1;31m] \033[1;37m• \033[1;33mVPSPACK BY POWERMX-CASITA    \033[1;32m(FREE) 
+\033[1;31m[\033[1;36m 09 \033[1;31m] \033[1;37m• \033[1;33mNEW-ULTIMATE OFICIAL-LIV     \033[1;32m(FREE)  
+
+\033[1;31m[\033[1;36m 10 \033[1;31m] \033[1;37m• \033[1;33mVPSMX BY KALIX1-CASITA       \033[1;32m(FREE) 
+\033[1;31m[\033[1;36m 11 \033[1;31m] \033[1;37m• \033[1;33mVPSPACK BY POWERMX-CASITA    \033[1;32m(FREE) 
 \033[1;31m[\033[1;36m 12 \033[1;31m] \033[1;37m• \033[1;33mADMMX BY REAPERGAMO-CASITA   \033[1;32m(FREE) 
-
-\033[1;31m[\033[1;36m 11 \033[1;31m] \033[1;37m• \033[1;33mNEW-ULTIMATE OFICIAL-LIV     \033[1;32m(FREE) 
 
 \033[1;31m[\033[1;36m 13 \033[1;31m] \033[1;37m• \033[1;35m[!] \033[1;32mACTUALIZAR  
 \033[1;31m[\033[1;36m 14 \033[1;31m] \033[1;37m• \033[1;35m[!] \033[1;31mDESINSTALAR MULTI-SCRIPTS
@@ -122,52 +122,52 @@ case "$x" in
    ;;
    2 | 02)
    clear
-   sshpluskey
+   admmanageralpha
    exit;
    ;;
    3 | 03)
    clear
-   admmanageralpha
+   newultimate
    exit;
    ;;
    4 | 04)
    clear
-   newultimate
+   vpspack20
    exit;
    ;;      
    5 | 05)
    clear
-   admvps
+   dankel
    exit;
    ;;
    6 | 06)
    clear
-   scriptmx_casita
+   scriptmx_illuminati
    exit;
    ;; 
    7 | 07)
    clear
-   scriptmx_illuminati
+   admvps
    exit;
    ;;
    8 | 08)
    clear
-   vpspack20
+   sshpluskey
    exit;
    ;;     
    9 | 09)
    clear
-   power
+   newfreeinstaldev
    exit;
    ;;
    10)
    clear
-   dankel
+   scriptmx_casita
    exit;
    ;;
    11)
    clear
-   newfreeinstaldev
+   power
    exit;
    ;;
    12)
