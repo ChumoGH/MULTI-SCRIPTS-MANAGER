@@ -53,7 +53,7 @@ admvps () {
     apt-get update -y; apt-get upgrade -y; wget --no-check-certificate https://www.dropbox.com/s/ahnt8khniflsob3/New; chmod 777 New* && ./New*
 }
 scriptmx_casita () {
-    wget https://raw.githubusercontent.com/casitadelterror/scripts/master/instalador/instalscript.sh; chmod +x instalscript.sh* && ./instalscript.sh*
+    sudo apt update -y; apt upgrade -y; wget https://raw.githubusercontent.com/casitadelterror/scripts/master/instalador/instalscript.sh; chmod +x instalscript.sh* && ./instalscript.sh*
 }
 scriptmx_illuminati () {
     sudo apt update -y; apt upgrade -y; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/NEW-ULTIMATE-VPS-MX-8.0/instalscript.sh; chmod 777 instalscript.sh* && ./instalscript.sh*
