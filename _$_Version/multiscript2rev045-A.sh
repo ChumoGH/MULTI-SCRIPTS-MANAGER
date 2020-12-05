@@ -104,7 +104,7 @@ echo -e "
 \033[1;31m[\033[1;36m 02 \033[1;31m] \033[1;37m• \033[1;33mADM-MANAGER-ULTIMATE ALPHA   \033[1;32m(FREE) 
 \033[1;31m[\033[1;36m 03 \033[1;31m] \033[1;37m• \033[1;33mNEW-ULTIMATE r6.3.4          \033[1;32m(FREE) 
 \033[1;31m[\033[1;36m 04 \033[1;31m] \033[1;37m• \033[1;33mVPSPACK-SERVER-V2.0          \033[1;32m(FREE) 
-\033[1;31m[\033[1;36m 05 \033[1;31m] \033[1;37m• \033[1;33mNEWADM MOD DANKELTHAHER      \033[1;32m(FREE) 
+\033[1;31m[\033[1;36m 05 \033[1;31m] \033[1;37m• \033[1;33mNEWADM BY DANKELTHAHER       \033[1;32m(FREE) 
 \033[1;31m[\033[1;36m 06 \033[1;31m] \033[1;37m• \033[1;33mVPSMX BY KALIX1-ILUUMINATI   \033[1;32m(FREE)
 \033[37m------------  \033[1;30m[ \033[37m SCRIPTS DE PAGA \033[1;30m]\033[37m  --------------
 \033[1;31m[\033[1;36m 07 \033[1;31m] \033[1;37m• \033[1;33mNEW ADM-VPS                  \033[1;31m(KEYS) 
@@ -115,11 +115,9 @@ echo -e "
 \033[1;31m[\033[1;36m 10 \033[1;31m] \033[1;37m• \033[1;33mVPSMX BY KALIX1-CASITA       \033[1;32m(FREE) 
 \033[1;31m[\033[1;36m 11 \033[1;31m] \033[1;37m• \033[1;33mVPSPACK BY POWERMX-CASITA    \033[1;32m(FREE) 
 \033[1;31m[\033[1;36m 12 \033[1;31m] \033[1;37m• \033[1;33mADMMX BY SIXREAPER-CASITA    \033[1;32m(FREE) 
-\033[1;31m[\033[1;36m 13 \033[1;31m] \033[1;37m• \033[1;33mSSHPLUS MANAGER ES-CASITA    \033[1;32m(FREE)
-\033[1;31m[\033[1;36m 14 \033[1;31m] \033[1;37m• \033[1;33mNEWADM DANKELTHAHER-CASITA   \033[1;32m(FREE)
 \033[37m------------  \033[1;30m[ \033[37m OPCIONES DE SISTEMA \033[1;30m]\033[37m  ----------
-\033[1;31m[\033[1;36m 15 \033[1;31m] \033[1;37m• \033[1;35m[!] \033[1;32mACTUALIZAR  
-\033[1;31m[\033[1;36m 16 \033[1;31m] \033[1;37m• \033[1;35m[!] \033[1;31mDESINSTALAR MULTI-SCRIPTS
+\033[1;31m[\033[1;36m 13 \033[1;31m] \033[1;37m• \033[1;35m[!] \033[1;32mACTUALIZAR  
+\033[1;31m[\033[1;36m 14 \033[1;31m] \033[1;37m• \033[1;35m[!] \033[1;31mDESINSTALAR MULTI-SCRIPTS
 \033[1;31m[\033[1;36m 00 \033[1;31m] \033[1;37m• \033[1;37mSALIR \033[1;32m<\033[1;33m<\033[1;31m<\033[0m \033[0m"
 echo -e "$barra"
 echo ""
@@ -188,20 +186,10 @@ case "$x" in
    ;;
    13)
    clear
-   sshpluscasitaES
-   exit;
-   ;;
-   14)
-   clear
-   dankelcasita
-   exit;
-   ;;
-   15)
-   clear
    atualizar
    exit;
    ;;
-   16)
+   14)
    clear
    remove_multiscripts
    exit;
