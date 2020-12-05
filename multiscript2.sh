@@ -10,32 +10,6 @@
 barra="\033[0m\e[34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo "/root/multiscript2.sh" > /bin/mko && chmod +x /bin/mko > /dev/null 2>&1
 
-fun_prog ()
-{
-	comando[0]="$1" 
-    ${comando[0]}  > /dev/null 2>&1 & 
-	tput civis
-	echo -ne "\033[1;32m.\033[1;33m.\033[1;31m. \033[1;32m"
-    while [ -d /proc/$! ]
-	do
-		for i in / - \\ \|
-		do
-			sleep .1
-			echo -ne "\e[1D$i"
-		done
-	done
-	tput cnorm
-	echo -e "\e[1DOK"
-}
-
-fun_update () {
-    sudo apt-get update -y
-}
-
-fun_upgrade () {
-    sudo apt-get upgrade -y
-}
-
 ##SCRIPTS A INSTALAR
 sshplus () {
     apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/master/Plus; chmod 777 Plus; ./Plus
@@ -95,9 +69,6 @@ clear
 echo -e "$barra"
 echo -e "\E[41;1;37mMULTI-SCRIPTS MANAGER             \033[1;32m[\033[1;37m VERSAO: r045 \033[1;32m]\E[0m"
 echo -e "$barra"
-#echo -ne "\033[1;33m[\033[1;31m ! \033[1;33m] \033[1;31mapt-get update "; fun_prog 'fun_update'
-#echo -ne "\033[1;33m[\033[1;31m ! \033[1;33m] \033[1;31mapt-get upgrade "; fun_prog 'fun_upgrade'
-#echo -e "$barra"
 echo -e "
 \033[37m------------  \033[1;30m[ \033[37m TEAM-ILUUMINATI \033[1;30m]\033[37m  --------------
 \033[1;31m[\033[1;36m 01 \033[1;31m] \033[1;37m• \033[1;33mSSHPLUS MANAGER v31          \033[1;32m(FREE) 
