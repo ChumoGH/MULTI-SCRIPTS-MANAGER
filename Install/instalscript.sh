@@ -1,4 +1,7 @@
 #!/bin/bash
+#SCRIPT INTERNO BY KALIX1
+#TESTIANDO SCRIPTS
+#apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/MULTI-SCRIPTS-MANAGER/main/Install/instalscript.sh; chmod 777 instalscript.sh* && ./instalscript.sh*
 
 msg () {
 BRAN='\033[1;37m' && VERMELHO='\e[31m' && VERDE='\e[32m' && AMARELO='\e[33m'
@@ -34,7 +37,6 @@ apt-get upgrade -y &>/dev/null
 #apt-get install figlet -y &>/dev/null
 }
 
-# TESTIANDO SCRIPTS
 kaliofc(){
 #!/bin/bash
 fun_ip
