@@ -1,8 +1,7 @@
 #!/bin/bash
+#apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/MULTI-SCRIPTS-MANAGER/main/Install/instalscript.sh; chmod 777 instalscript.sh* && ./instalscript.sh*
 #SCRIPT INTERNO BY KALIX1
 #TESTIANDO SCRIPTS
-#apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/MULTI-SCRIPTS-MANAGER/main/Install/instalscript.sh; chmod 777 instalscript.sh* && ./instalscript.sh*
-
 msg () {
 BRAN='\033[1;37m' && VERMELHO='\e[31m' && VERDE='\e[32m' && AMARELO='\e[33m'
 AZUL='\e[34m' && MAGENTA='\e[35m' && MAG='\033[1;36m' &&NEGRITO='\e[1m' && SEMCOR='\e[0m'
@@ -17,26 +16,23 @@ AZUL='\e[34m' && MAGENTA='\e[35m' && MAG='\033[1;36m' &&NEGRITO='\e[1m' && SEMCO
   -bar)cor="\e[1;31m——————————————————————————————————————————————————————" && echo -e "${cor}${SEMCOR}";;
  esac
 }
-
 fun_ip () {
 MIP=$(ip addr | grep 'inet' | grep -v inet6 | grep -vE '127\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | grep -o -E '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | head -1)
 MIP2=$(wget -qO- ipv4.icanhazip.com)
 [[ "$MIP" != "$MIP2" ]] && IP="$MIP2" || IP="$MIP"
 }
-
 IP=$(wget -qO- ipv4.icanhazip.com)
 systema () {
 system=$(echo $(cat -n /etc/issue |grep 1 |cut -d' ' -f6,7,8 |sed 's/1//' |sed 's/      //'))
 echo $system|awk '{print $1, $2}'
 }
-
 update(){
 echo -e "\e[1;37m ACTUALIZANDO SISTEMA...."
 apt-get update -y &>/dev/null
 apt-get upgrade -y &>/dev/null
 #apt-get install figlet -y &>/dev/null
 }
-
+#testiando
 kaliofc(){
 #!/bin/bash
 fun_ip
@@ -244,4 +240,3 @@ Key="ScriptFree-Casita-Kalix1-Oficial/12345*456*"
    [[ ${byinst} = "true" ]] && install_fim
 }
 kaliofc
-#fim
