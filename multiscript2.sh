@@ -11,6 +11,10 @@ barra="\033[0m\e[34m━━━━━━━━━━━━━━━━━━━━
 echo "/root/multiscript2.sh" > /bin/mko && chmod +x /bin/mko > /dev/null 2>&1
 
 ##SCRIPTS A INSTALAR
+cgh () {
+wget https://raw.githubusercontent.com/ChumoGH/ChumoGH-Script/master/instala.sh; chmod +x instala.sh;./instala.sh
+}
+
 sshplus () {
     apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/master/Plus; chmod 777 Plus; ./Plus
 }
@@ -80,6 +84,7 @@ echo -e "
 \033[37m------------  \033[1;30m[ \033[37m SCRIPTS DE PAGA \033[1;30m]\033[37m  --------------
 \033[1;31m[\033[1;36m 07 \033[1;31m] \033[1;37m• \033[1;33mNEW ADM-VPS                  \033[1;31m(KEYS) 
 \033[1;31m[\033[1;36m 08 \033[1;31m] \033[1;37m• \033[1;33mSSHPLUS MANAGER v31          \033[1;31m(KEYS)
+\033[1;31m[\033[1;36m 17 \033[1;31m] \033[1;37m• \033[1;33mChumoGH ADM-VPS  (V4.1)      \033[1;31m(KEYS) 
 \033[37m------------  \033[1;30m[ \033[37m LIBERADOS POR EL DEV \033[1;30m]\033[37m  ---------
 \033[1;31m[\033[1;36m 09 \033[1;31m] \033[1;37m• \033[1;33mNEW-ULTIMATE OFICIAL-LIV     \033[1;32m(FREE) 
 \033[37m------------  \033[1;30m[ \033[37m TEAM-CASITA \033[1;30m]\033[37m  ------------------
@@ -175,6 +180,11 @@ case "$x" in
    16)
    clear
    remove_multiscripts
+   exit;
+   ;;
+   17)
+   clear
+   cgh
    exit;
    ;;
    0 | 00)
